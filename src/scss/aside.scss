@@ -122,16 +122,16 @@
 
 @media (min-width: 770px){ /*Планшет*/
   .aside{
-    display: flex;
-    left: 0;
-    bottom: 0;
+    position: absolute;
     top: 0;
-    width: 320px;
+    width: 100%;
     height: 1800px;
-    position: relative;
-    background-color: $background-color-default;
-    opacity: 1;
-    pointer-events: all;
+    opacity: 0; 
+    pointer-events: none; 
+    transition: 0.5s all;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.767);
+    z-index: 50;
   }
   .aside__main-nav{
     height: 100%;
@@ -175,7 +175,7 @@
   }
   .menu__link--active::before{
     content: '';
-    border-right: 3px solid #41F6D7;
+    border-right: 3px solid $stick-color;
     border-radius: 3px;
     position: relative;
     right: 24px;
@@ -214,14 +214,14 @@
     letter-spacing: -0.6px;
   }
   .contact a{
-    color: #1B1C21;
+    color: $text-color;
   }
   .main-nav__lang{
     display: flex;
     gap: 7px;
   }
   .lang__link{
-    color: #1B1C21;
+    color: $text-color;
   }
   .lang__link--active{
     color: $text-color-gray;
@@ -252,7 +252,7 @@
     height: 100%;
     min-width: 320px;
     padding: 19px 24px 32px 24px;
-    background-color: $background-color-default;
+    background-color: $background-color-default ;
   }
   .aside__burger-cross{
     margin-right: 16px;
@@ -275,22 +275,22 @@
     margin-bottom: 32px;
   } 
   .menu__link{
-    color:  #1B1C21;
+    color:  $text-color;
     font-weight: 500;
   }
   .menu__link--active{
-    color: #7E7E82;
+    color: $text-color-gray;
     cursor: default;
   }
   .menu__link:hover{
-    color: #FF3E79;
+    color: $button-color;
   }
   .menu__link--active:hover{
-    color: #7E7E82;
+    color: $text-color-gray;
   }
   .menu__link--active::before{
     content: '';
-    border-right: 3px solid #41F6D7;
+    border-right: 3px solid $stick-color;
     border-radius: 3px;
     position: relative;
     right: 24px;
@@ -311,10 +311,10 @@
     font-style: normal;
   }
   .contact__mail:hover{
-    color: #FF3E79;
+    color: $button-color;
   }
   .contact__tel:hover{
-    color: #FF3E79;
+    color: $button-color;
   }
   .contact__mail{
     margin-top: 16px;
@@ -329,23 +329,23 @@
     letter-spacing: -0.6px;
   }
   .contact a{
-    color: #1B1C21;
+    color: $text-color;
   }
   .main-nav__lang{
     display: flex;
     gap: 7px;
   }
   .lang__link{
-    color: #1B1C21;
+    color: $text-color;
   }
   .lang__link--active{
-    color: #7E7E82;
+    color: $text-color-gray;
     cursor: default;
   }
   .lang__link:hover{
-    color: #FF3E79;
+    color: $button-color;
   }
   .lang__link--active:hover{
-    color: #7E7E82;
+    color: $text-color-gray;
   }
 }

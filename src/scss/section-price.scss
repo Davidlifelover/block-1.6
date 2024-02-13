@@ -1,0 +1,196 @@
+@media (min-width: 320px){
+    /*price*/
+  .price__list{
+    background-color: $background-color-default;
+    border-radius: 6px;
+    display: none;
+  }
+  .price__item{
+    display: grid;
+  }
+  .price__item--hidden{
+    background-color: $background-color;
+    color: $text-color-gray;
+  }
+  .price__btn{
+    display: flex;
+    height: 32px;
+    justify-content: space-between;
+    width: 119px;
+    background: $button-color;
+    border-radius: 16px;
+    padding: 4px 8px 4px 12px;
+  }
+  .price__buy{
+    color: $background-color-default;
+    font-weight: 700;
+    line-height: 24px; 
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+  }
+  .foot__text{
+    max-width: 421px;
+    margin-top: 24px;
+  } 
+  .foot__link{
+    font-size: 16px;
+    font-weight: 600;
+    color: $text-color;
+  }
+  .foot__link:hover{
+    color: $button-color;
+  }
+  .foot__icon{
+    position: relative;
+    top: 7px;
+  }
+  .section__price-swiper{
+    margin-top: 16px;  
+    height: 100% !important; /*200px*/
+    padding: 0 8px 0 8px !important;
+  }
+  .price-swiper__item{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 240px !important;
+    background-color: $background-color-default;
+    border: 0;
+  }
+  .price-swiper__name{
+    gap: 16px;
+  }
+  .price-swiper__text--hidden{
+    color: $text-color-gray;
+  }
+  .price__btn{
+    align-self: flex-end !important;
+    position: absolute;
+    bottom: 16px;
+  }
+}
+
+@media (min-width: 770px){
+  /*price*/
+  .price__list{
+    display: grid;
+    background-color: $background-color-default;
+  }
+  .price__item{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 0.1fr;
+    height: 64px;
+    justify-content: space-between;
+    position: relative;
+    gap: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: #EAEAEA solid 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .price__item--hidden{
+    background-color: $background-color;
+    color: $text-color-gray;
+  }
+  .price__btn{
+    display: flex;
+    height: 32px;
+    justify-content: space-between;
+    align-self: center !important;
+    width: 119px;
+    background: $button-color;
+    border-radius: 16px;
+    padding: 4px 8px 4px 12px;
+    position: relative !important;
+    top: 0 !important;
+  }
+  .price__buy{
+    color: $background-color-default;
+    font-weight: 700;
+    line-height: 24px; 
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+  }
+  .foot__text{
+    max-width: 421px;
+    margin-top: 24px;
+  } 
+  .foot__link{
+    font-size: 16px;
+    font-weight: 600;
+    color: #1B1C21;
+  }
+  .foot__link:hover{
+    color: $button-color;
+  }
+  .foot__icon{
+    position: relative;
+    top: 7px;
+  }
+  .section__price-swiper{
+    display: none !important;
+  }
+}
+
+@media (min-width: 1120px){
+  .price__list{
+    display: grid;
+    background-color: $background-color-default;
+  }
+  .price__item{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 0.1fr;
+    justify-content: space-between;
+    position: relative;
+    gap: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: $stick-color-gray solid 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .price__item--hidden{
+    background-color: $background-color;
+    color: $text-color-gray;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 0.1fr;
+  }
+  .price__btn{
+    display: flex;
+    height: 32px;
+    justify-content: space-between;
+    width: 119px;
+    background: $button-color;
+    border-radius: 16px;
+    padding: 4px 8px 4px 12px;
+  }
+  .price__buy{
+    color: $background-color-default;
+    font-weight: 700;
+    line-height: 24px; 
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+  }
+  .foot__text{
+    max-width: 421px;
+    margin-top: 24px;
+  } 
+  .foot__link{
+    font-size: 16px;
+    font-weight: 600;
+    color: $text-color;
+  }
+  .foot__link:hover{
+    color: $button-color;
+  }
+  .foot__icon{
+    position: relative;
+    top: 7px;
+  }
+}

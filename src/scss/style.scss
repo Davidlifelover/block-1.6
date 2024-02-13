@@ -5,12 +5,13 @@ $text-color-gray: #7e7e82;
 $button-color: #ff3e79; 
 $stick-color: #41f6d7;
 $border-color: #d9fff5;
+$stick-color-gray: #EAEAEA;  
 $pagination-color: #dddddd;
 $pagination-chosen-color: #b5b6bc;
 
 @font-face {
   font-family: 'TT Lakes';
-  src: url('../fonts/TT Lakes.ttf') format('truetype');
+  src: url('../fonts/TTLakes-Medium.ttf') format('truetype');
 }
 
 body {
@@ -23,11 +24,22 @@ body {
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  border: none;
+  background: none;
+  box-sizing: border-box;
+  font-family: 'TT Lakes';
+}
+
 @import './main-content.scss';
 @import './aside.scss';
-@import './modal-call.scss';
-@import './modal-feedback.scss';
 @import './section-brand.scss';
 @import './section-card.scss';
 @import './section-price.scss';
 @import './footer.scss';
+@import './modal-fedback.scss';
+@import './modal-call.scss';

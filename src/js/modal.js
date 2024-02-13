@@ -8,10 +8,10 @@ const modalFeedbackHead = document.querySelector('.form-content__modal-feedback'
 const openModalFeedbackHead = document.querySelectorAll('.header__message'); 
 const closeModalFeedbackHead = document.querySelector('.modal-feedback__burger-cross');
 
-const modalCallHeadBg = document.querySelector('.modal-feedback');
-const modalCallHead = document.querySelector('.form-content__modal-feedback');
+const modalCallHeadBg = document.querySelector('.modal-call');
+const modalCallHead = document.querySelector('.form-content__modal-call');
 const openModalCallHead = document.querySelectorAll('.header__call'); 
-const closeModalCallHead = document.querySelector('.modal-feedback__burger-cross');
+const closeModalCallHead = document.querySelector('.modal-call__burger-cross');
 
 const modalCallBg = document.querySelector('.modal-call');
 const modalCall = document.querySelector('.form-content__modal-call');
