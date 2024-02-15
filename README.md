@@ -1,3 +1,5 @@
+https://davidlifelover.github.io/block-1.6/
+
 # Webpack Static Site Starter Kit
 
 ## Требования к проекту
