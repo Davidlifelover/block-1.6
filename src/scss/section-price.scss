@@ -1,5 +1,3 @@
-@media (min-width: 320px){
-    /*price*/
   .price__list{
     background-color: $background-color-default;
     border-radius: 6px;
@@ -46,7 +44,7 @@
   }
   .section__price-swiper{
     margin-top: 16px;  
-    height: 100% !important; /*200px*/
+    height: 280px !important;
     padding: 0 8px 0 8px !important;
   }
   .price-swiper__item{
@@ -69,7 +67,6 @@
     position: absolute;
     bottom: 16px;
   }
-}
 
 @media (min-width: 770px){
   /*price*/

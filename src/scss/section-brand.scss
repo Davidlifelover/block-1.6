@@ -1,5 +1,6 @@
-@media (min-width: 320px){
-      /*section*/
+  .section__brand{
+    height: 112px !important;
+  }
   .section__title{
     padding: 16px 0 16px 32px;
     background: linear-gradient(90deg, #f8f8f8 0%, #fff 98.61%);
@@ -82,10 +83,11 @@
   .swiper-pagination-bullet-active {
     background-color: $pagination-chosen-color !important;
   }
-}
 
 @media (min-width: 770px){
-  /*section*/
+  .section__brand{
+    height: 100% !important;
+  }
   .section__title{
     padding: 16px 0 16px 32px;
     background: linear-gradient(90deg, #f8f8f8 0%, #fff 98.61%);
@@ -143,6 +145,9 @@
 }
 
 @media (min-width: 1120px){
+  .section__brand{
+    height: 100% !important;
+  }
   .section__title{
     padding: 16px 0 16px 32px;
     background: linear-gradient(90deg, #f8f8f8 0%, #fff 98.61%);

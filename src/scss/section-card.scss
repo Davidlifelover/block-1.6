@@ -1,4 +1,6 @@
-@media (min-width: 320px){
+  .section__card{
+    height: 200px !important;
+  }
   .section__nav{
     padding: 24px 32px 24px 32px;
   }
@@ -46,9 +48,11 @@
   .swiper-pagination-bullet-active {
     background-color: $pagination-chosen-color !important;
   }
-}
 
 @media (min-width: 770px){
+  .section__card{
+    height: 100% !important;
+  }
   .section__nav{
     padding: 24px 32px 24px 32px !important;
   }
@@ -91,6 +95,9 @@
 }
 
 @media (min-width: 1120px){
+  .section__card{
+    height: 100% !important;
+  }
   .section__nav{
     padding: 24px 32px 24px 32px;
   }

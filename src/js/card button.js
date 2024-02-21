@@ -9,14 +9,12 @@ let show = () => {
     button.innerHTML = 'Скрыть';
     icon.style = 'transform: rotate(180deg)'
 }
-
 let invis = () => {
     elements.classList.remove('visible');
     hidden = true;
     button.innerHTML = 'Показать все';
     icon.style = 'transform: rotate(0deg)'
 }
-
 button.addEventListener('click', () => {
     if (hidden) {
         show();
@@ -36,14 +34,12 @@ let shows = () => {
     buttonCard.innerHTML = 'Скрыть';
     iconCard.style = 'transform: rotate(180deg)'
 }
-
 let invise = () => {
     elementCard.classList.remove('visible');
     hidde = true;
     buttonCard.innerHTML = 'Показать все';
     iconCard.style = 'transform: rotate(0deg)'
 }
-
 buttonCard.addEventListener('click', () => {
     if (hidde) {
         shows();
@@ -51,31 +47,29 @@ buttonCard.addEventListener('click', () => {
         invise();
     }
 })
-/*
-const btn = document.querySelector('.section__tex');
-const elemen = document.querySelector('.card__list');
-const ic = document.querySelector('.section__im');
+
+const buttonText = document.querySelector('.show-more__text');
+const buttonIcon = document.querySelector('.show-more__img');
+const textBlock = document.querySelector('.about__wrapper');
 let hid = true;
 
-let sho = () => {
-    console.log(elemen);
-    elemen.classList.add('visible');
+let shov = () => {
+    textBlock.classList.add('read-more')
     hid = false;
-    btn.innerHTML = 'Скрыть';
-    ic.style = 'transform: rotate(180deg)'
+    buttonText.innerHTML = 'Скрыть';
+    buttonIcon.style = 'transform: rotate(180deg)'
 }
-
-let invi = () => {
-    elemen.classList.remove('visible');
+let invi = () =>  {
+    textBlock.classList.remove('read-more')
     hid = true;
-    btn.innerHTML = 'Показать все';
-    ic.style = 'transform: rotate(0deg)'
+    buttonText.innerHTML = 'Читать далее';
+    buttonIcon.style = 'transform: rotate(0deg)'
 }
-
-btn.addEventListener('click', () => {
+buttonText.addEventListener('click', () => {
     if (hid) {
-        sho();
+        shov();
     } else {
         invi();
     }
-})*/
+})
+
